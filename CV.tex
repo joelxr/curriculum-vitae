@@ -1,113 +1,88 @@
-\documentclass[12pt,a4paper]{moderncv}
-\moderncvstyle{classic}
-\moderncvcolor{grey}
-\moderncvicons{awesome}
-\nopagenumbers{}
-\usepackage{quattrocento}
-\usepackage[utf8]{inputenc}
+\documentclass[10pt,a4paper]{article}
 \usepackage[T1]{fontenc}
-\usepackage{color}
-\usepackage{graphicx}
-\usepackage[none]{hyphenat}
-%\usepackage{fullpage}
-
-\name{Joel}{Xavier Rocha}
-\title{\small Brazilian. Date of birth: 12/28/89.}
-\address{390, Alanis Maria Laurindo de Oliveira Avenue}{Fortaleza, Ceará. Brazil.}
-\email{joelxr@gmail.com}
-\homepage{joelxr.github.io}
-\phone[mobile]{+55 85 99773.3473}
-\phone[fixed]{+55 85 3259.2955}
-\social[linkedin]{joelxr}
-\social[twitter]{joelxr}
-\social[github]{joelxr}
+\usepackage[utf8]{inputenc}
+\usepackage[dvipsnames]{xcolor}
+\definecolor{head}{HTML}{2C5282}
+\usepackage{ulem}
+\usepackage{setspace}
+\usepackage{fontawesome}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=head,
+    filecolor=head,      
+    urlcolor=head
+}
+\usepackage{geometry}
+\geometry{paper=a4paper, margin=2cm}
+\usepackage{titlesec}
+\renewcommand{\familydefault}{\sfdefault}
+\pagenumbering{gobble}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\titleformat{\section}{\normalfont}{\filright}{0pt}{\footnotesize\bfseries\uppercase}
+\titleformat{\subsection}{\normalfont}{\filright}{0pt}{\small\color{head}\bfseries}
+\title{
+    \color{head} \huge \uppercase{Joel Rocha} \\
+    \color{head} \vspace{0.2cm} \small \faEnvelopeO \ joelxr@gmail.com \href{https://github.com/joelxr}{\faGithub \ joelxr}
+    \href{https://www.linkedin.com/in/joelxr}{\faLinkedin \ joelxr}
+    \href{https://joelxr.github.io/}{\faGlobe \ joelxr.github.io}
+    \\
+    \color{black} \vspace{0.2cm} \small 10+ years of experience in software development, strong analytical skills and knowledge of the full software development life cycle, worked for many dynamic and successful companies. Proactive, communicative.
+    \vspace{0.4cm} \hline
+    \vspace{-0.8cm}
+}
+\author{}
+\date{}
 \begin{document}
-\makecvtitle
+\maketitle
+\section*{Working experience}
+\subsection*{Cardea Project, Co-founder, June/2017 - Today}
 
-\begin{itemize}
-    \item Over six years of experience in Information Technology as a technical analyst, working with analysis and development of meaningful solutions.
-    \item Valuable team asset, proactive profile and entrepreneur in search of new challenges and with great capacity to absorb and develop new technologies and ease of teamwork, focus on results, customer focus.
-    \item Combined with technical leadership for the development area and strong analytical skills followed by knowledge in process and methods to develop and maintain software.
-    \item With a solid base on Java/J2EE platform and environment, worked in many projects for the leading companies and institutes who support a large scale of daily operations.
-\end{itemize}
+Co-creating a solution to handle appointment scheduling and billing of physiotherapy clinics. Developing features based on the customer's needs. Designing a web application using Vue framework. Working on an API with Express, Go and MongoDB. (Vue.js, Webpack, Bootstrap3, REST, Node, Express, Golang, MongoDB, NoSQL).
 
-\section{Education and Certifications}
-\cventry{2008--2015}{Bachelor Degree}{Federal Institute of Education, Science and Technology of Ceará}{}{IFCE}{Computer Engineer}
+\subsection*{\href{www.atlantico.com.br}{\uline{Instituto Atlântico \faExternalLink}}, Software Engineer, July/2020 - Today}
 
-\section{Courses and Certifications}
+Evolving a voice assistant solution for a global printer manufacturer. Creating skills in Python (for Alexa devices) and Javascript (for Google devices). Integrating with API for low-level communication. Developing a new authentication flow using OAuth2. Deploying with AWS Elastic Beanstalk and CI/CD with Jenkins. Integrating  my team with two other independent teams, leadership experience mentoring new members. (Javascript, Express, Node.js, Python, Ruby, Docker, AWS).
 
-\cventry{2009}{Course}{iFactory Solutions}{}{}{WEB Development with Java}
-\cventry{2010}{Course}{Foreign Language Center of the state of Ceará}{CLEC}{}{English}
-\cventry{2017}{Course}{Udemy}{\httplink{ude.my/UC-I9OQPCKI}}{}{Complete Course for NodeJS and MongoDB Developer}
-\cventry{2017}{Course}{Mongo DB University}{\httplink{goo.gl/WQy24D}}{}{MongoDB for Node.js Developers}
-\cventry{2016}{Certification}{Oracle}{}{}{Java Standard Edition 6 Programmer}
-\cventry{2018}{Certification}{ANBIMA}{}{}{CPA-20}
+\subsection*{\href{www.casamagalhaes.com.br}{\uline{Casa Magalhães \faExternalLink}}, Frontend Leader, January/2019 - July/2020}
 
-\section{Languages}
-\cvdoubleitem{Portuguese}{Native}{English}{Advanced}
-\cvdoubleitem{Spanish}{Intermediary}{Italian}{Basic}
+Lead frontend developers team. Developing a redesign for a solution to retailers which has been running for 9 years. Designing an architecture to keep old and new features in the same SPA, enabling us to deliver new features using Vue and the old ones stayed intact. Close to a UI/UX team to build a Design System. Teaching frontend technologies to teamates. (Vue.js, Vuex, Axios, Jest, SCSS, CSS Modules, Cypress, Webpack).
 
-\section{Skills}
-\begin{itemize}
-    \item \textbf{Back-end}
-        \begin{itemize}
-            \item Java:
-                \begin{itemize}
-                    \item JEE, JSP, EL, EJB, JSF, JPA, Android, JasperReports.
-                    \item Frameworks: Spring VRaptor, Hibernate.
-                    \item Testing: JUnit, Mockito, Powermock, Selenium.
-                    \item Servers: IBM Websphere, Glassfish, Tomcat, JBoss, Wildfly.
-                    \item Task Runners: Ant, Maven, Gradle.
-                    \item Others: Sonar, PMD.
-                \end{itemize}
-            \item NodeJS: Express, npm.
-            \item Ruby: RubyGems, RSpec, Ruby On Rails.
-            \item C\#: .NET Framework 3.5.
-            \item Relational Databases: Oracle, SQL Server, MySQL, SQLite.
-            \item NoSQL: MongoDB.
-        \end{itemize}
-    \item \textbf{Front-end}
-        \begin{itemize}
-            \item HTML, Responsive WEB.
-            \item CSS: Twitter's Bootstrap and Materialize CSS, SASS.
-            \item JavaScript.
-                \begin{itemize}
-                    \item jQuery.
-                    \item Task runners: npm scripts, Grunt.
-                    \item Bundler: Browserify, Webpack.
-                    \item Frameworks: AngularJS, VueJS.
-                \end{itemize}
-        \end{itemize}
-    \item \textbf{Others}
-        \begin{itemize}
-            \item Banking technologies: Calypso, FIX Protocol.
-            \item Version control system: Git, SVN and CVS.
-            \item Continuous Integration: Jenkins and TravisCI.
-            \item HTTP, HTTPS requests and SSH.
-            \item Linux, Shellscript (BASH, ZSH).
-            \item Text Editors and IDE: Eclipse, IntelliJ IDEA, Android Studio and Vim.
-            \item \LaTeX\
-        \end{itemize}
-\end{itemize}
+\subsection*{Municipal Bureau of Finance of Ceará State, Software Engineer, April/2016 - December, 2018}
 
-\section{Experience}
+Developing solutions to improve all city needs in light of municipal taxes. Creating an engine to read gigabytes of payments and debts files. Creating pages to provide feedback on background tasks. (Java, JBoss Seam, Maven, EJB, Hibernate, Oracle, JSF, Richfaces, jQuery, Bootstrap3)
 
-\cventry{Apr 2016 until now}{Municipal Bureau of Finance}{Technical Analyst}{}{}{}{Working to Municipal Bureau of Finance (aka. SEFIN), I'm contributing to develop projects that are able to handle all city incoming taxes, we work with Java solutions.\newline {}}
+\subsection*{\href{https://cpqi.com/}{\uline{CPQi \faExternalLink}}, Software Engineer, November/2012 - April/2016}
 
-\cventry{Nov 2012 Apr 2016}{CPQi}{Technical Leader and Technical Analyst}{}{}{}{At CPQi, I have contributed to five solutions  developed to improve the Brazil and Chile financial markets. All these solutions were developed to banks and agencies which are strongly engaged in daily trades. Our clients have trusted their most important and valuable systems to us, to develop and support it.\newline{}}
+Developing integrations with third-party systems using messages and queues. Implementing Calypso (v14) for Futures, Fixed Income, and SWAPs products. Covering Brazilian interest rate and inflation indices for the Sao Paulo stock exchange. (Calypso, Java, JSF, EL, Web Services, Web Sockets, JUnit, Mule ESB, Oracle, SQL Server, IBM MQ, FIX Protocol).
 
-\cventry{Nov 2010 Nov 2012}{Ebix}{Senior Developer}{}{}{}{I worked at the maintenance and development for the WEB systems of the leading insurance companies in Brazil. Mostly of these insurance systems were running in production or in pre production environment. To delivery correctly all the clients requirements, we made a strongly partnership with all the insurances team.\newline{}}
+\subsection*{\href{https://www.ebix.com/}{\uline{Ebix \faExternalLink}}, Software Engineer, April/2009 - November/2012}
 
-\cventry{Apr 2009 Nov 2010}{Usix}{Trainee}{}{}{}{I worked at the maintenance and development of WEB solutions. Initially, 20h per week then 30h per week. Working with Java and MVC and Command design patterns, some features we written in Java Script.\newline{}}
+Maintaining solutions to the leading insurance companies in Brazil. Working on new features and fixes. Close to the clients. (Java, JSP, MVC, Javascript, Oracle, SQL Server, Web Services, SOA, JDBC, Hibernate, JSF, jQuery).
 
-\cventry{Jul 2008\newline Apr 2009}{Artificial Intelligence Lab. Lambda}{Volunteer}{}{}{}{Developed a global monitoring system written in Ruby On Rails and Google Maps API. In this lab we had a lot of study cells, such as Java and Ruby.\newline{}}
+\vspace{2em}
 
-\section{Hobbies}
-
-\begin{itemize}
-    \item Reading,
-    \item Board Games,
-    \item Coffee.
-\end{itemize}
-
+\begin{minipage}[t]{0.3\textwidth}
+\section*{Education}
+Computer Engineering, BSc., \textbf{2015}
+\begin{spacing}{1.25}
+\bfseries \small
+\href{https://ifce.edu.br/}{\uline{Instituto Federal de Educação, Ciência e Tecnologia do Ceará \faExternalLink}}
+\end{spacing}
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[t]{0.4\textwidth}
+\section*{Certificates \& Courses}
+{\color{head} \textbf{freeCodeCamp}} \textbf{2020} \href{https://www.freecodecamp.org/certification/joelxr/responsive-web-design}{\uline{Responsive Web \faExternalLink}} \\
+{\color{head} \textbf{MongoDB}} \textbf{2017} \href{https://university.mongodb.com/course_completion/eb01dff6-609c-4eb3-bcfe-e8078451?utm_source=copy&utm_medium=social&utm_campaign=university_social_sharing}{\uline{MongoDB for Node.js Developers \faExternalLink}} \\
+{\color{head} \textbf{Oracle}} \textbf{2016} \href{https://www.dropbox.com/s/l8mek0rc72unfwc/Certificado_OCJP.pdf?dl=0}{\uline{Java SE 6 Programmer \faExternalLink}} \\
+\end{minipage}
+\hspace{0.5cm}
+\begin{minipage}[t]{0.2\textwidth}
+\section*{Languages}
+{\color{head} \textbf{Portuguese}} Native \\
+{\color{head} \textbf{English}} Advanced \\
+{\color{head} \textbf{Spanish}} Intermediate
+\end{minipage}
 \end{document}
